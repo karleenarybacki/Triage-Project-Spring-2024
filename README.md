@@ -12,7 +12,6 @@ The emergency department (ED) triage process is crucial for ensuring timely pati
 This project presents four optimized classification models to enhance ED triage: Support Vector Machine (SVM), Random Forest, Logistic Regression, and k-Nearest Neighbor (kNN). We explored two scenarios: (1) with access to patient vital signs (trained on all features) and (2) without vital signs (trained on a subset of features).
 
 
-
 ### Reasoning:
 - **Support Vector Machine (SVM):** Aims to find the hyperplane that best separates patients into different mistriage levels; creates a multi-dimensional space where each patient's data point is located based on their values for these features. Ultimately, predicts the mistriage level, the urgency of the patient's condition based on the KTAS score, depending on the hyperplane boundary.
 - **Random Forest:** Aims to construct multiple decision trees (100) where each tree represents a subset of the data and makes decisions about mistriage from an ensemble approach. Ultimately, the mode of the predicted mistriage levels across all trees is chosen as the final prediction.
@@ -23,23 +22,55 @@ This project presents four optimized classification models to enhance ED triage:
 After evaluating the performance of each model, we selected the best-performing model for our Smart Triage software. This model was chosen based on its accuracy, efficiency, and ability to generalize well to new, unseen data.
 
 
+## Approach
+Our approach involved evaluating the performance of each model and selecting the best-performing model for our Smart Triage software. This model was chosen based on its accuracy, efficiency, and ability to generalize well to new, unseen data.
 
-## Approach 
+### _Dataset Overview_
+Our data, as reported in [Moon et al.](https://doi.org/10.1371/journal.pone.0216972), was gathered from 2 different emergency departments (EDs), 1 regional and 1 local; both academic urban medical centers. The data entries were collected by emergency nurses and doctors who jointly recorded patients' medical histories and physical examination results. The local ED data was collected by only an emergency nurse who recorded results from patients' physical examinations. The ED that the patient visited was reported in "Group." In each ED, the number of patient visits per hour over 20 randomly-selected days within the study period was calculated and reported as "Patients number per hour." A total of 1,540 medical records were collected, with 676 from the regional ED and 864 from the local ED. The subsequent exclusion criteria included: patients under 15, data entered 30 minutes after initial assessment, patients who canceled care, and insufficient medical records; 1267 eligible patient medical records remained after exclusion.
 
-### Data Preprocessing
-We imputed missing values in key columns based on the mode within subgroups defined by mistriage and KTAS_expert, ensuring filled values are representative of triage contexts. We also removed rows containing Korean characters across all text columns to mitigate biases or errors, resulting in a cleaned dataset for model training, validation, and evaluation.
+### _Data Visualization_
+The heatmap below visualizes the frequency of each manually curated category of Chief Complaints across various levels of urgency (KTAS scores), showing the distribution of Chief Complaints among the five KTAS categories.
+<p align="center">
+    <img src="https://github.com/karleenarybacki/Triage-Project-Spring-2024/assets/89222332/573685e1-d23f-4943-ba38-e9bcaf257454" alt="heatmap_chief_complaints" width="734">
+</p>
 
 
-### Model Evaluation
-Each model is trained and evaluated using metrics such as:
-- Accuracy
-- Precision
-- F1 Score
-- Sensitivity
-- Specificity.
+### _Data Preprocessing_
+We imputed missing values in three columns based on the mode within the subgroups defined by mistriage and KTAS_expert, and removed rows with Korean characters across all text columns. This resulted in 1,260 data entries ready for model training and evaluation.
 
-The ROC curve from both scenarios is displayed after each model. 
+### _Model Selection and Implementation_
+We implemented four machine learning models in this project: 
+1. Support Vector Machine (SVM)
+2. Random Forest
+3. Logistic Regression
+4. k-Nearest Neighbors (kNN)
 
+For specifics on the implementation of each model, please refer to the code available on this page.
+
+### _Model Evaluation_
+Each model was trained and evaluated using metrics such as accuracy, precision, F1 score, sensitivity, and specificity. The ROC curve from both scenarios is displayed after each model.
+
+
+
+
+
+# Results
+
+## Model Performance 
+The model performance is shown in the table below, where the Random Forest model achieved the highest accuracy overall. The table summarizes the key model evaluation metric values for each of the models created and tested, including accuracy, precision, F1 score, sensitivity, and specificity. The models are listed in order of best to worst in terms of accuracy, with the Random Forest model achieving the highest accuracy of 97.11%, followed by the Logistic Regression model with an accuracy of 90.5%, the SVM model with an accuracy of 89.67%, and the kNN model with an accuracy of 85.95%. The models with Vitals taken (trained on all features) performed better than when no vitals were taken. Overall, The Random Forest model outperformed the other models in all metrics, followed closely by the Logistic Regression model. The SVM model performed reasonably well, while the kNN model had the lowest performance overall. 
+
+<p align="center">
+    <img width="734" alt="Screenshot 2024-05-08 at 7 41 26 PM" src="https://github.com/karleenarybacki/Triage-Project-Spring-2024/assets/89222332/8ee44e95-a933-4a14-8168-8bf1d5cbcdc4">
+</p>
+
+
+
+
+
+The performance of each model is shown in the ROC curves below among the different models; SVM (A), Random Forest (B), Logistic Regression (C), and kNN (D). The blue curves represent the models with vitals taken (all features), while the red curves represent the models with no vitals taken (selected features).
+<p align="center">
+    <img width="734" alt="Screenshot 2024-05-08 at 7 39 48 PM" src="https://github.com/karleenarybacki/Triage-Project-Spring-2024/assets/89222332/5ab70866-37f1-4980-9841-458f25a17bee">
+</p>
 
 
 
@@ -49,3 +80,17 @@ Our Smart Triage software approach facilitates accurate patient care prioritizat
 - A decision aid for healthcare providers to accurately prioritize cases.
 
 We demonstrated the feasibility of our Smart Triage software to "Skip the Queue, Save the Day" and bridge the gap between nurse burnout and mistriage. Our algorithm shows the potential of AI-driven triage systems to revolutionize emergency care and possibly integrate into EHR data for more efficient triage.
+
+<p align="center">
+    <img width="200" alt="Screenshot 2024-05-08 at 7 47 11 PM" src="https://github.com/karleenarybacki/Triage-Project-Spring-2024/assets/89222332/146773a3-a6b5-47c6-9a84-f4c8f0f9ec40">
+</p>
+
+
+
+
+
+
+
+
+
+
