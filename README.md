@@ -1,5 +1,7 @@
 # Triage Prediction Models Spring 2024
-BE 5740 Group #2 Project | Roopsha Bandopadhyay, Aditi Kulkarni, Benjamin Lin, Karleena Rybacki, Manasa Vempati
+BE 5740 Group #2 Project
+
+Roopsha Bandopadhyay, Aditi Kulkarni, Benjamin Lin, Karleena Rybacki, Manasa Vempati
 
 
 
