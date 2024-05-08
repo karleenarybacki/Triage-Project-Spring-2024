@@ -1,5 +1,5 @@
 # Triage Prediction Models Spring 2024
-BE 5740 Group #2 Project
+BE 5740 Group #2 Project | Roopsha Bandopadhyay, Aditi Kulkarni, Benjamin Lin, Karleena Rybacki, Manasa Vempati
 
 
 
@@ -66,8 +66,7 @@ The model performance is shown in the table below, where the Random Forest model
 
 
 
-
-The performance of each model is shown in the ROC curves below among the different models; SVM (A), Random Forest (B), Logistic Regression (C), and kNN (D). The blue curves represent the models with vitals taken (all features), while the red curves represent the models with no vitals taken (selected features).
+The performance of each model is shown in the ROC curves below among the different models; SVM (A), Random Forest (B), Logistic Regression (C), and kNN (D). The blue curves represent the models with vitals taken (all features), while the red curves represent the models with no vitals taken (selected features). The ROC curves reflect the evaluation metrics, with the Random Forest model exhibiting a perfect ROC curve, indicating a high level of accuracy and potentially suggesting overfitting. The order of the models in terms of accuracy follows the same pattern as in the table, with the Random Forest model achieving the highest accuracy, followed by the Logistic Regression model, the SVM model, and the kNN model. The ROC curves provide a visual representation of the trade-off between the true positive rate and the false positive rate for each model, with the area under the curve indicating the model's ability to distinguish between positive and negative classes.
 <p align="center">
     <img width="734" alt="Screenshot 2024-05-08 at 7 39 48 PM" src="https://github.com/karleenarybacki/Triage-Project-Spring-2024/assets/89222332/5ab70866-37f1-4980-9841-458f25a17bee">
 </p>
@@ -75,14 +74,10 @@ The performance of each model is shown in the ROC curves below among the differe
 
 
 ## Benefits of Smart Triage Software
-Our Smart Triage software approach facilitates accurate patient care prioritization and enhances mistriage prediction. Key benefits include:
-- Early detection and prioritization of critical conditions, enabling rapid intervention and potentially life-saving measures.
-- A decision aid for healthcare providers to accurately prioritize cases.
-
-We demonstrated the feasibility of our Smart Triage software to "Skip the Queue, Save the Day" and bridge the gap between nurse burnout and mistriage. Our algorithm shows the potential of AI-driven triage systems to revolutionize emergency care and possibly integrate into EHR data for more efficient triage.
+We demonstrated the feasibility of applying machine learning techniques to achieve Smart Triage. "Skip the Queue, Save the Day" and bridge the gap between nurse burnout and mistriage. Our algorithm shows the potential of AI-driven triage systems to revolutionize emergency care and possibly integrate into EHR data for more efficient triage.
 
 <p align="center">
-    <img width="200" alt="Screenshot 2024-05-08 at 7 47 11 PM" src="https://github.com/karleenarybacki/Triage-Project-Spring-2024/assets/89222332/146773a3-a6b5-47c6-9a84-f4c8f0f9ec40">
+    <img width="400" alt="Screenshot 2024-05-08 at 7 52 13 PM" src="https://github.com/karleenarybacki/Triage-Project-Spring-2024/assets/89222332/8ef3355a-eab4-44ef-9d5b-b84e196ead29">
 </p>
 
 
