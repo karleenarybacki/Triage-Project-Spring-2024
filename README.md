@@ -1,9 +1,6 @@
-# Triage Prediction Models Spring 2024
-BE 5740 Group #2 Project
-
-Roopsha Bandopadhyay, Aditi Kulkarni, Benjamin Lin, Karleena Rybacki, Manasa Vempati
-
-
+# Smart Triage 
+- Roopsha Bandopadhyay, Aditi Kulkarni, Benjamin Lin, Karleena Rybacki, Manasa Vempati
+- BE 5740 Group #2 Project
 
 ## Background
 The emergency department (ED) triage process is crucial for ensuring timely patient care. However, evaluating patients' conditions and vital signs to prioritize those in greatest need can be complex and overwhelming, especially in crowded EDs. To address this, machine learning models can predict triage outcomes based on patient data, optimizing EDs for better resource allocation and timely identification of patients requiring emergency attention.
