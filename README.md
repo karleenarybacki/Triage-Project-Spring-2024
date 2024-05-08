@@ -45,7 +45,7 @@ We implemented four machine learning models in this project:
 3. Logistic Regression
 4. k-Nearest Neighbors (kNN)
 
-For specifics on the implementation of each model, please refer to the code available on this page.
+For specifics on the implementation of each model, please refer to the [code](https://github.com/karleenarybacki/Triage-Project-Spring-2024#:~:text=Triage_Troopers_Code.ipynb) available at the top of this page.
 
 ### _Model Evaluation_
 Each model was trained and evaluated using metrics such as accuracy, precision, F1 score, sensitivity, and specificity. The ROC curve from both scenarios is displayed after each model.
