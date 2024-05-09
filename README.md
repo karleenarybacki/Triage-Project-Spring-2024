@@ -1,4 +1,4 @@
-# Smart Triage 
+# Smart Triage 🏥
 - Roopsha Bandopadhyay, Aditi Kulkarni, Benjamin Lin, Karleena Rybacki, Manasa Vempati
 - BE 5740 Group #2 Project
 
