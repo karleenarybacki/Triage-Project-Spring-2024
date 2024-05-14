@@ -59,8 +59,9 @@ Each model was trained and evaluated using metrics such as accuracy, precision, 
 The model performance is shown in the table below, where the Random Forest model achieved the highest accuracy overall. The table summarizes the key model evaluation metric values for each of the models created and tested, including accuracy, precision, F1 score, sensitivity, and specificity. The models are listed in order of best to worst in terms of accuracy, with the Random Forest model achieving the highest accuracy of 97.11%, followed by the Logistic Regression model with an accuracy of 90.5%, the SVM model with an accuracy of 89.67%, and the kNN model with an accuracy of 85.95%. The models with Vitals taken (trained on all features) performed better than when no vitals were taken. Overall, The Random Forest model outperformed the other models in all metrics, followed closely by the Logistic Regression model. The SVM model performed reasonably well, while the kNN model had the lowest performance overall. 
 
 <p align="center">
-    <img width="734" alt="Screenshot 2024-05-08 at 7 41 26 PM" src="https://github.com/karleenarybacki/Triage-Project-Spring-2024/assets/89222332/8ee44e95-a933-4a14-8168-8bf1d5cbcdc4">
+    <img width="734" alt="Screenshot 2024-05-14 at 10 57 55 AM" src="https://github.com/karleenarybacki/Triage-Project-Spring-2024/assets/89222332/f0fde032-b563-40dc-bfc0-aa9f33b36643">
 </p>
+
 
 
 
