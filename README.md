@@ -67,9 +67,11 @@ The model performance is shown in the table below, where the Random Forest model
 
 
 The performance of each model is shown in the ROC curves below among the different models; SVM (A), Random Forest (B), Logistic Regression (C), and kNN (D). The blue curves represent the models with vitals taken (all features), while the red curves represent the models with no vitals taken (selected features). The ROC curves reflect the evaluation metrics, with the Random Forest model exhibiting a perfect ROC curve, indicating a high level of accuracy and potentially suggesting overfitting. The order of the models in terms of accuracy follows the same pattern as in the table, with the Random Forest model achieving the highest accuracy, followed by the Logistic Regression model, the SVM model, and the kNN model. The ROC curves provide a visual representation of the trade-off between the true positive rate and the false positive rate for each model, with the area under the curve indicating the model's ability to distinguish between positive and negative classes.
+
 <p align="center">
-    <img width="734" alt="Screenshot 2024-05-08 at 7 39 48 PM" src="https://github.com/karleenarybacki/Triage-Project-Spring-2024/assets/89222332/5ab70866-37f1-4980-9841-458f25a17bee">
+    <img width="734" alt="Screenshot 2024-05-14 at 10 58 55 AM" src="https://github.com/karleenarybacki/Triage-Project-Spring-2024/assets/89222332/7fdcfd40-b6c3-4506-b6c4-259fa74c9be1">
 </p>
+
 
 
 
